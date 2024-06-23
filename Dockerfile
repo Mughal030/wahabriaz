@@ -12,13 +12,11 @@ RUN /tmp/install_parrot.sh
 
 # Set up entrypoint
 CMD ["sh", "-c", "python3 -m http.server 8080"]
-Updated install_parrot.sh:
+install_parrot.sh:
 #!/bin/bash
 
 # Download the Parrot Security OS ISO file
 wget -q "https://download.parrot.sh/iso/latest/parrot-security-4.11_amd64.iso" -O /tmp/parrot-security-4.11_amd64.iso
 
-# Execute commands to install Parrot Security OS within the container (commands for VirtualBox installation and ISO mounting)
-# Insert your installation commands here
-
-# Placeholders for starting Parrot Security OS
+# Execute installation commands for setting up Parrot Security OS within the container
+# Include installation commands specific to setting up Parrot Security OS
