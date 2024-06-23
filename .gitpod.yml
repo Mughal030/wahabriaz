@@ -1,0 +1,17 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  - port: 8080
+    onOpen: ignore
+
+tasks:
+  - name: Install Parrot Security OS
+    init: |
+      #!/bin/bash
+      /tmp/install_parrot.sh
+
+vscode:
+  extensions:
+    - shd101wyy.markdown-all-in-one
+    - dotjoshjohnson.xml
